@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Group_Suite">
+
+	<groups>
+		<run>
+			<include name="dummyGroup"></include>
+			
+		</run>
+	</groups>
+
+	<test thread-count="5" name="Group_Test">
+		<classes>
+			<class name="all_testNG_package.GroupExecutionClass1" />
+			<class name="all_testNG_package.GroupExecutionClass2" />
+		</classes>
+	</test> <!-- Group_Test -->
+</suite> <!-- Group_Suite -->

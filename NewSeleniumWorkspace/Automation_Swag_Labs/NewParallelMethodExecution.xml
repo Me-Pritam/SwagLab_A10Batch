@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="All Test Suite">
+    <test verbose="2" parallel="methods" thread-count="2" preserve-order="true" name="ParallelMethods">
+        <classes>
+            <class name="all_testNG_package.ParallelMethodExecution">
+                <methods>
+                    <include name="AadBagToCart"/>
+                    <include name="add_tShirt_To_cart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

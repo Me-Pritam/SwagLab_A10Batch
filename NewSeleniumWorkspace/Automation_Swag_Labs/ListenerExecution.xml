@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Listener_Implementation">
+	
+	<listeners>
+	
+	<listener class-name="listenersPackage.ListenerImplementation"></listener>
+	
+	</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="all_testNG_package.AddingItem_End_To_End_Using_Hard_Assertions"/>
+      <class name="all_testNG_package.Check_Number_Of_Added_Item_Using_SoftAssertion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

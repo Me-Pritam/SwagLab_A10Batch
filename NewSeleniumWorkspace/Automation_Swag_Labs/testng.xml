@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelMethodSuite">
+    <test verbose="2" parallel="classes" thread-count="5"  name="C:/Users/User/NewSeleniumWorkspace/Automation_Swag_Labs/src/test/java/all_testNG_package/SortingItemPrice.java">
+        <classes>
+            <class name="all_testNG_package.SortingItemPrice">
+                <methods><include name="checkVisibilityOfPrices"/>
+                    <include name="sortFromHighToLow"/>
+                </methods>
+            </class>
+            <class name="all_testNG_package.AddingItem_End_To_End_Using_Hard_Assertions">
+                <methods>
+                    <include name="addItem"/>
+                    <include name="goToCart"/>
+                    <include name="doCheckout"/>
+                    <include name="fillOrderDetails"/>
+                    <include name="finishOrder"/>
+                    <include name="verifyMessage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
